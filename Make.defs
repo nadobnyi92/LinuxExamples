@@ -1,0 +1,4 @@
+ROOT_PATH := $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
+
+OBJDIR=$(ROOT_PATH)/.obj
+BINDIR=$(ROOT_PATH)/.bin
